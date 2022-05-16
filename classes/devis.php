@@ -71,7 +71,7 @@ class devis
 
 	public function RecupererNomProduitDevis($idProd)
 	{
-		$sql = "SELECT designationProduit FROM produit INNER JOIN devis ON produit.codeProduit = devis.idProduit WHERE idProduit = :idProd";
+		$sql = "SELECT designationProduit FROM produit WHERE codeProduit = :idProd";
 		
 		$req = $this->pdo->prepare($sql);
 		$req->bindParam(':idProd', $idProd, PDO::PARAM_INT);

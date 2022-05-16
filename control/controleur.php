@@ -142,7 +142,7 @@ class controleur {
 
 			if($demandeDevis)
 			{
-				(new vue)->ConfirmationDevis($lesCategories,"Votre demande de devis pour le produit '".$nomProduitDemandeDevis."' a bien été prise en compte.");
+				(new vue)->ConfirmationDevis($lesCategories,"Votre demande de devis pour le produit '".$nomProduitDemandeDevis[0]."' a bien été prise en compte.");
 			}
 			else
 			{			
